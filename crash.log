@@ -1,0 +1,396 @@
+Crashlog created at 2013-05-06 09:52:52 +0200
+
+===== MESSAGE:
+
+Sass::SyntaxError: Invalid CSS after "...**************/": expected "}", was ""
+  (in /Users/simonwalther/Development/Clients/2dsf/website/content/assets/stylesheets/application.scss:96)
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /Users/simonwalther/Development/Clients/2dsf/website/content/assets/stylesheets/application.scss:96
+  1. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:1148:in `expected'
+  2. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:1084:in `expected'
+  3. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:1079:in `tok!'
+  4. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:536:in `block'
+  5. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:529:in `ruleset'
+  6. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:553:in `block_child'
+  7. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:546:in `block_contents'
+  8. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:82:in `stylesheet'
+  9. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/scss/parser.rb:27:in `parse'
+  10. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:342:in `_to_tree'
+  11. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+  12. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+  13. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-sass-0.9.1/lib/sprockets/sass/sass_template.rb:40:in `evaluate'
+  14. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/tilt-1.3.7/lib/tilt/template.rb:77:in `render'
+  15. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:197:in `block in evaluate'
+  16. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `each'
+  17. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `evaluate'
+  18. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/processed_asset.rb:12:in `initialize'
+  19. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `new'
+  20. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `block in build_asset'
+  21. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:395:in `circular_call_protection'
+  22. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:373:in `build_asset'
+  23. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
+  24. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
+  25. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
+  26. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
+  27. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
+  28. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/bundled_asset.rb:16:in `initialize'
+  29. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `new'
+  30. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `build_asset'
+  31. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
+  32. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
+  33. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
+  34. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
+  35. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
+  36. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/environment.rb:75:in `find_asset'
+  37. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:295:in `[]'
+  38. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:325:in `block in find_asset_path'
+  39. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:146:in `block in resolve'
+  40. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:142:in `block in match'
+  41. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:134:in `each'
+  42. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:134:in `match'
+  43. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:113:in `block in find_in_paths'
+  44. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:112:in `each'
+  45. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:112:in `find_in_paths'
+  46. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:63:in `block in find'
+  47. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:57:in `each'
+  48. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:57:in `find'
+  49. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/trail.rb:139:in `find'
+  50. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:130:in `resolve'
+  51. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:324:in `find_asset_path'
+  52. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:128:in `asset_path'
+  53. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-sprockets-filter-0.0.2/lib/nanoc/helpers/sprockets.rb:28:in `asset_path'
+  54. ./Rules:34:in `block in load'
+  55. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  56. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  57. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:238:in `block (2 levels) in route_reps'
+  58. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:236:in `each_pair'
+  59. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:236:in `block in route_reps'
+  60. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:231:in `each'
+  61. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:231:in `route_reps'
+  62. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:123:in `load'
+  63. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  64. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  65. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-nanoc-1.0.0/lib/guard/nanoc.rb:65:in `block in recompile'
+  66. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-nanoc-1.0.0/lib/guard/nanoc.rb:63:in `chdir'
+  67. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-nanoc-1.0.0/lib/guard/nanoc.rb:63:in `recompile'
+  68. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-nanoc-1.0.0/lib/guard/nanoc.rb:28:in `run_on_changes'
+  69. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:99:in `block in run_supervised_task'
+  70. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:97:in `catch'
+  71. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:97:in `run_supervised_task'
+  72. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:146:in `block in run_first_task_found'
+  73. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:144:in `each'
+  74. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:144:in `run_first_task_found'
+  75. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:79:in `block in run_on_changes'
+  76. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
+  77. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:174:in `each'
+  78. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:174:in `block (2 levels) in scoped_guards'
+  79. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:173:in `catch'
+  80. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:173:in `block in scoped_guards'
+  81. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:172:in `each'
+  82. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:172:in `scoped_guards'
+  83. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard/runner.rb:72:in `run_on_changes'
+  84. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard.rb:141:in `block (2 levels) in setup_listener'
+  85. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard.rb:365:in `block in within_preserved_state'
+  86. <internal:prelude>:10:in `synchronize'
+  87. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard.rb:362:in `within_preserved_state'
+  88. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib/guard.rb:140:in `block in setup_listener'
+  89. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/listener.rb:212:in `call'
+  90. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
+  91. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/listener.rb:221:in `block in initialize_adapter'
+  92. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
+  93. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+  94. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+  ... 97 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.2 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.3 (2012-10-12) on x86_64-darwin11.4.2 with RubyGems 1.8.24.
+
+===== SYSTEM INFORMATION:
+
+Darwin Simons-Mac-mini.local 11.4.2 Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 PDT 2012; root:xnu-1699.32.7~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  bundler 1.3.5
+  capistrano 2.14.2
+  chunky_png 1.2.8
+  coderay 1.0.9
+  colored 1.2
+  compass 0.12.2
+  cri 2.3.0
+  em-websocket 0.5.0
+  eventmachine 1.0.3
+  execjs 1.4.0
+  formatador 0.2.4
+  fssm 0.2.10
+  guard 1.7.0
+  guard-bundler 1.0.0
+  guard-livereload 1.1.3
+  guard-nanoc 1.0.0
+  highline 1.6.16
+  hike 1.2.2
+  http_parser.rb 0.5.3
+  libv8 3.11.8.17
+  listen 0.7.3
+  lumberjack 1.0.3
+  method_source 0.8.1
+  multi_json 1.7.2
+  nanoc 3.6.2
+  nanoc-gzip-filter 0.0.1
+  nanoc-sprockets-filter 0.0.2
+  net-scp 1.1.0
+  net-sftp 2.1.1
+  net-ssh 2.6.6
+  net-ssh-gateway 1.2.0
+  pry 0.9.12
+  rack 1.2.1
+  railsless-deploy 1.1.0
+  rb-fsevent 0.9.3
+  ref 1.0.4
+  ruby_gntp 0.3.4
+  sass 3.2.7
+  slop 3.4.4
+  sprockets 2.8.2
+  sprockets-helpers 1.0.0
+  sprockets-sass 0.9.1
+  therubyracer 0.11.4
+  thor 0.18.1
+  tilt 1.3.7
+  uglifier 2.0.1
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-fyIFFg/Render"
+Apple_Ubiquity_Message => "/tmp/launch-3UfEB2/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/bundler-1.3.5/bin/bundle"
+BUNDLE_GEMFILE => "/Users/simonwalther/Development/Clients/2dsf/website/Gemfile"
+COLORFGBG => "7;0"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-qhvgHy/org.x:0"
+EDITOR => "mvim"
+GEM_HOME => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286"
+GEM_PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286:/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286@global"
+GIT_EDITOR => "mvim -f -c 'au VimLeave * !open -a iTerm'"
+GUARD_NOTIFICATIONS => "---\n- :name: :gntp\n  :options: {}\n- :name: :terminal_title\n  :options: {}\n"
+GUARD_NOTIFY => "true"
+HOME => "/Users/simonwalther"
+IRBRC => "/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/.irbrc"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w0t0p0"
+LC_CTYPE => "UTF-8"
+LOGNAME => "simonwalther"
+MY_RUBY_HOME => "/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286"
+OLDPWD => "/Users/simonwalther/Development"
+PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin:/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/simonwalther/.rvm/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+PWD => "/Users/simonwalther/Development/Clients/2dsf/website"
+RACK_ENV => "development"
+RAILS_ENV => "development"
+RUBYOPT => "-I/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/bundler-1.3.5/lib -rbundler/setup"
+RUBY_VERSION => "ruby-1.9.3-p286"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SIGNED_COOKIE_SECRET_TOKEN => "bc84357593086ce26e825f80ab48d4d7a1b09a6306ed04801f1494d9b7e92ded0f93001012aa29ae59a76ef573f8d76efe05226e0d16fb4d8769ead18ad8ab12"
+SSH_AUTH_SOCK => "/tmp/launch-HN0TR5/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/5s/ccw2x0nj4wddkwd2xmm3g2wm0000gn/T/"
+USER => "simonwalther"
+_ => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin/guard"
+_ORIGINAL_GEM_PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286:/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286@global"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+__array_start => "0"
+_first => "0"
+_second => "1"
+escape_flag => "1"
+rvm_bin_path => "/Users/simonwalther/.rvm/bin"
+rvm_path => "/Users/simonwalther/.rvm"
+rvm_prefix => "/Users/simonwalther"
+rvm_version => "1.16.16 (stable)"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    capistrano (2.14.2)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    chunky_png (1.2.8)
+    coderay (1.0.9)
+    colored (1.2)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    cri (2.3.0)
+      colored (>= 1.2)
+    em-websocket (0.5.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.3)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    formatador (0.2.4)
+    fssm (0.2.10)
+    guard (1.7.0)
+      formatador (>= 0.2.4)
+      listen (>= 0.6.0)
+      lumberjack (>= 1.0.2)
+      pry (>= 0.9.10)
+      thor (>= 0.14.6)
+    guard-bundler (1.0.0)
+      bundler (~> 1.0)
+      guard (~> 1.1)
+    guard-livereload (1.1.3)
+      em-websocket (>= 0.2.0)
+      guard (>= 1.5.0)
+      multi_json (~> 1.0)
+    guard-nanoc (1.0.0)
+    highline (1.6.16)
+    hike (1.2.2)
+    http_parser.rb (0.5.3)
+    libv8 (3.11.8.17)
+    listen (0.7.3)
+    lumberjack (1.0.3)
+    method_source (0.8.1)
+    multi_json (1.7.2)
+    nanoc (3.6.2)
+      cri (~> 2.3)
+    nanoc-gzip-filter (0.0.1)
+      nanoc (>= 3.4.0)
+    nanoc-sprockets-filter (0.0.2)
+      nanoc (>= 3.4.0)
+      sprockets (>= 2.8.0)
+    net-scp (1.1.0)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.6)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    pry (0.9.12)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rack (1.2.1)
+    railsless-deploy (1.1.0)
+    rb-fsevent (0.9.3)
+    ref (1.0.4)
+    ruby_gntp (0.3.4)
+    sass (3.2.7)
+    slop (3.4.4)
+    sprockets (2.8.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-helpers (1.0.0)
+      sprockets (~> 2.0)
+    sprockets-sass (0.9.1)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
+    thor (0.18.1)
+    tilt (1.3.7)
+    uglifier (2.0.1)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capistrano
+  compass
+  guard
+  guard-bundler
+  guard-livereload
+  guard-nanoc
+  nanoc
+  nanoc-gzip-filter
+  nanoc-sprockets-filter
+  rack
+  railsless-deploy
+  rb-fsevent
+  ruby_gntp
+  sass
+  sprockets
+  sprockets-helpers
+  sprockets-sass
+  therubyracer
+  uglifier
+
+===== LOAD PATHS:
+
+  0. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/http_parser.rb-0.5.3/lib
+  1. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/em-websocket-0.5.0/lib/../lib
+  2. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/uglifier-2.0.1/lib
+  3. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/therubyracer-0.11.4/lib
+  4. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/therubyracer-0.11.4/ext
+  5. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-sass-0.9.1/lib
+  6. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib
+  7. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/ruby_gntp-0.3.4/lib
+  8. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/ref-1.0.4/lib
+  9. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/rb-fsevent-0.9.3/lib
+  10. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/railsless-deploy-1.1.0/lib
+  11. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-sprockets-filter-0.0.2/lib
+  12. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib
+  13. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/tilt-1.3.7/lib
+  14. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.2.1/lib
+  15. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-gzip-filter-0.0.1/lib
+  16. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib
+  17. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/libv8-3.11.8.17/lib
+  18. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/libv8-3.11.8.17/ext
+  19. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib
+  20. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-nanoc-1.0.0/lib
+  21. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-livereload-1.1.3/lib
+  22. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-bundler-1.0.0/lib
+  23. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/guard-1.7.0/lib
+  24. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/thor-0.18.1/lib
+  25. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/pry-0.9.12/lib
+  26. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/slop-3.4.4/lib
+  27. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/method_source-0.8.1/lib
+  28. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/lumberjack-1.0.3/lib
+  29. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib
+  30. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/formatador-0.2.4/lib
+  31. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/execjs-1.4.0/lib
+  32. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/multi_json-1.7.2/lib
+  33. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/em-websocket-0.5.0/lib
+  34. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/http_parser.rb-0.5.3/lib
+  35. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/eventmachine-1.0.3/lib
+  36. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib
+  37. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib
+  38. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib
+  39. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.10/lib
+  40. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/colored-1.2/lib
+  41. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/coderay-1.0.9/lib
+  42. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/chunky_png-1.2.8/lib
+  43. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/capistrano-2.14.2/lib
+  44. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/net-ssh-gateway-1.2.0/lib
+  45. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/net-sftp-2.1.1/lib
+  46. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/net-scp-1.1.0/lib
+  47. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/net-ssh-2.6.6/lib
+  48. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/highline-1.6.16/lib
+  49. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/bundler-1.3.5/lib
+  50. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1
+  51. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/x86_64-darwin11.4.2
+  52. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby
+  53. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby/1.9.1
+  54. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin11.4.2
+  55. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby
+  56. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1
+  57. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/x86_64-darwin11.4.2
+  58. /Users/simonwalther/Development/Clients/2dsf/website
