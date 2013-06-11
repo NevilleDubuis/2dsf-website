@@ -10,7 +10,9 @@
 /**********************/
 
 $grey: #e5e5e5;
+$grey2: #bababa;
 $dark-grey: #d0d0d0;
+$red: #9a0013;
 
 /**********************/
 /******* OTHER ********/
@@ -23,14 +25,60 @@ $list-space: 10px;
 /******* GLOBAL *******/
 /**********************/
 
+body {
+  font-family: arial;
+}
+
 div#main {
   margin: 0 auto;
   width: $websiteW;
 }
 
+.small {
+  height: 1px;
+  margin: 5px;
+}
+
+h2 {
+  color: $red;
+  font-family: helvetica;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: helvetica;
+}
+
+.both {
+  clear: both;
+}
+
 h1.logo {
-  margin-top: 40px;
+  float: left;
+  margin: 40px 0 0 40px;
   @include replace-text-with-dimensions('logo.png', 50%, 50%, true);
+}
+
+hr {
+  margin: 20px 0;
+  height: 2px;
+  background-color: $grey2;
+  color: $grey2;
+  border: none;
+}
+
+#social {
+  margin-top: 25px;
+  float: right;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    display: inline;
+  }
 }
 
 div#topArticleBox {
@@ -43,33 +91,28 @@ section#articleBox {
   height: 170px;
   width: $websiteW;
   border: solid $grey 1px;
-
-  article {
-
-    div#nav {
-      float: left;
-      text-align: right;
-      writing-mode: tb-rl;
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-    }
-  }
+  margin-bottom: 40px;
 
   div#newsBox {
     float: right;
+    height: 170px;
+    width: 960px;
+    text-align: right;
+    color: white;
+    font-size: 13px;
 
-    img {
-      max-height: 170px;
+    p {
+      margin: 20px 5px 10px 0;
     }
   }
 }
 
 nav {
-  margin-top: 50px;
 
   ul {
     @include horizontal-list($list-space);
     float: right;
+    margin-top: 30px;
 
     li {
 
@@ -88,6 +131,33 @@ p.copyright {
   font-size: 13px;
 }
 
+#row {
+  float: left;
+  width: 220px;
+  margin-left: 20px;
+}
+
 /******************/
 /**** GENERAL *****/
 /******************/
+
+
+/******************/
+/***** IMAGE ******/
+/******************/
+
+.passages_landscape {
+  background-image: url('passages_landscape.jpg');
+}
+
+.tigresVolantsLandscape {
+  background-image: url('tigresVolantsLandscape.jpg');
+}
+
+.newsimg {
+  margin: 5px;
+  float: left;
+  display: inline;
+  max-width: 208px;
+  max-height: 266px;
+}
