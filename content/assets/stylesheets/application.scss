@@ -141,6 +141,43 @@ p.copyright {
 /**** GENERAL *****/
 /******************/
 
+#lightbox {
+  width: 770px;
+  position: absolute;
+  top: 0px;
+  margin: 20px auto;
+  padding: 20px 40px 65px 40px;
+  margin-left: -40px;
+  border: solid $red 5px;
+  background-color: white;
+
+  #lightboxScroll {
+    overflow: scroll;
+  }
+
+  #close {
+    float: right;
+    width: 10px;
+
+    a {
+      text-decoration: none;
+
+      span {
+        width: 10px;
+        color: $red;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
 
 /******************/
 /***** IMAGE ******/
