@@ -9,12 +9,12 @@ $(function() {
   $('.lightbox_link').on('click', function(event) {
     event.preventDefault();
 
-    $('#lightbox').fadeIn('slow');
+    $('#lightbox').slideDown('slow');
   });
 
   $('#close').on('click', function(event) {
     event.preventDefault();
 
-    $('#lightbox').fadeOut('slow');
+    $('#lightbox').slideUp('fast');
   });
 });
