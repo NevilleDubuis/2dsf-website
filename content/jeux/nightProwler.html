@@ -17,7 +17,12 @@ title: A New Item
   <h2>GAMME</h2>
   <h1>NightProwler 2</h1>
   <hr class="small" />
-  <img src="<%= image_path('nightProwler.jpg') %>" class="newsimg"></img>
+  <div id="nav_books">
+    <img src="<%= image_path('Atlas.jpg') %>" class="newsimg books" id="item4"></img>
+    <img src="<%= image_path('VDO.jpg') %>" class="newsimg books" id="item3"></img>
+    <img src="<%= image_path('Ecran.jpg') %>" class="newsimg books" id="item2"></img>
+    <img src="<%= image_path('nightProwler.jpg') %>" class="newsimg books" id="item1"></img>
+  </div>
 <% end %>
 
 <% content_for :description do %>

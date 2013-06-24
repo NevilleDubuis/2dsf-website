@@ -17,12 +17,13 @@ title: A New Item
   <h2>GAMME</h2>
   <h1>Tigres Volants</h1>
   <hr class="small" />
-  <img src="<%= image_path('tigresVolants.jpg') %>" class="newsimg GammeImg"></img>
-  <img src="<%= image_path('Copatransit.jpg') %>" class="newsimg GammeImg2"></img>
-  <img src="<%= image_path('Dame_de_Fer.jpg') %>" class="newsimg GammeImg3"></img>
-  <img src="<%= image_path('Ergartis.jpg') %>" class="newsimg GammeImg4"></img>
-  <img src="<%= image_path('campagneLupanar.jpg') %>" class="newsimg GammeImg5"></img>
-  <div class="empty"></div>
+  <div id="nav_books">
+    <img src="<%= image_path('campagneLupanar.jpg') %>" class="newsimg books" id="item5"></img>
+    <img src="<%= image_path('Ergartis.jpg') %>" class="newsimg books" id="item4"></img>
+    <img src="<%= image_path('Dame_de_Fer.jpg') %>" class="newsimg books" id="item3"></img>
+    <img src="<%= image_path('Copatransit.jpg') %>" class="newsimg books" id="item2"></img>
+    <img src="<%= image_path('tigresVolants.jpg') %>" class="newsimg books" id="item1"></img>
+  </div>
 <% end %>
 
 <% content_for :description do %>
