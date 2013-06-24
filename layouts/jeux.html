@@ -39,15 +39,26 @@
         <section id="articleBox">
           <article>
             <%= content_for(item, :articleBox) %>
-            <div class="inline">
-              <%= content_for(item, :actuel) %>
-            </div>
           </article>
         </section>
       </header>
       <div id="content">
-        <%= yield %>
+        <div class="inline">
+          <%= content_for(item, :actuel) %>
+        </div>
+        <hr />
+        <div id="row">
+          <%= content_for(item, :gamme) %>
+        </div>
+        <div id="bigRow">
+          <h2><br /></h2>
+          <%= content_for(item, :description) %>
+        </div>
+        <div class="both"></div>
+        <hr />
+        <%= content_for(item, :book) %>
       </div>
+      <div class="both"></div>
       <footer>
         <p class="copyright">©2006-2013 2d Sans Faces, société coopérative - développé par Liquid Concept</p>
       </footer>

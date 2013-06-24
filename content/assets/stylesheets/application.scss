@@ -20,7 +20,7 @@ $red: #9a0013;
 /**********************/
 
 $websiteW: 960px;
-$list-space: 10px;
+$list-space: 15px;
 
 /**********************/
 /******* GLOBAL *******/
@@ -44,6 +44,11 @@ h2 {
   color: $red;
   font-family: helvetica;
   margin-top: 10px;
+}
+
+a:visited, a {
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
@@ -152,6 +157,41 @@ h3 {
 /**** GENERAL *****/
 /******************/
 
+.GammeImg, .GammeImg2, .GammeImg3, .GammeImg4, .GammeImg5 {
+  position: absolute;
+  top: 500px;
+}
+
+.GammeImg {
+  left: 200px;
+  z-index: 999;
+}
+
+.GammeImg2 {
+  left: 230px;
+  z-index: 998;
+}
+
+.GammeImg3 {
+  left: 240px;
+  z-index: 997;
+}
+
+.GammeImg4 {
+  left: 250px;
+  z-index: 996;
+}
+
+.GammeImg5 {
+  left:  260px;
+  z-index: 995;
+}
+
+.empty {
+  height: 200px;
+  z-index: 994;
+}
+
 #lightbox {
   width: 1150px;
   position: absolute;
@@ -159,7 +199,7 @@ h3 {
   margin: 20px auto;
   padding: 20px 40px 65px 40px;
   margin-left: -401px;
-  border: solid #9a0013 5px;
+  border: solid #b58000 5px;
   background-color: white;
 
 
@@ -177,11 +217,36 @@ h3 {
 
       span {
         width: 10px;
-        color: $red;
+        color: #b58000;
         font-size: 1.5em;
         font-weight: bold;
       }
     }
+  }
+}
+
+.NavBarLi {
+  display: none;
+  position: absolute;
+  top: 105px;
+  left: 446px;
+  width: 120px;
+  border: solid black 1px;
+  background-color: white;
+  height: 80px;
+
+  a:hover {
+
+    li {
+      font-size: 17px;
+    }
+  }
+}
+
+.NavBarLink {
+
+  li {
+    width: 125px;
   }
 }
 
@@ -194,7 +259,7 @@ h3 {
   margin: 3px;
 }
 
-.tome {
+.book {
   float: left;
   margin-left: 80px;
 }
@@ -233,11 +298,13 @@ h3 {
 }
 
 .newsimg {
+  @include box-shadow(black 2px 2px 10px);
+}
+
+.news, .newsimg {
   margin: 5px;
   display: inline;
   max-width: 145px;
   max-height: 266px;
   float: left;
-
-  @include box-shadow(black 2px 2px 10px);
 }

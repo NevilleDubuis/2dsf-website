@@ -17,4 +17,18 @@ $(function() {
 
     $('#lightbox').slideUp('fast');
   });
+
+  $('.NavBarLi').hide();
+
+  $('.NavBarLink').on('click', function(event) {
+    event.preventDefault();
+
+    $('.NavBarLi').fadeIn('fast');
+  });
+
+  $('.NavBarLink2').on('click', function(event) {
+    event.preventDefault();
+
+    $('.NavBarLi').fadeOut('fast');
+  });
 });

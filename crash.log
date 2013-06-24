@@ -1,138 +1,52 @@
-Crashlog created at 2013-06-13 14:01:23 +0200
+Crashlog created at 2013-06-19 09:54:42 +0200
 
 ===== MESSAGE:
 
-Sass::SyntaxError: Undefined variable: "$lred".
-  (in /Users/simonwalther/Development/Clients/2dsf/website/content/assets/stylesheets/application.scss:169)
+SyntaxError: item /jeux/tigresVolants/ (rep default):40: syntax error, unexpected keyword_end, expecting $end
+;  end ; _erbout.force_encoding(__ENCODING__)
+      ^
 
 ===== COMPILATION STACK:
 
-  (empty)
+  - [item]   /jeux/tigresVolants/ (rep default)
 
 ===== STACK TRACE:
 
-  0. /Users/simonwalther/Development/Clients/2dsf/website/content/assets/stylesheets/application.scss:169
-  1. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/variable.rb:49:in `_perform'
-  2. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/node.rb:40:in `perform'
-  3. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-  4. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  5. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  6. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  7. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-  8. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  9. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  10. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  11. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  12. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  13. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-  14. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  15. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  16. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  17. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-  18. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  19. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  20. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  21. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  22. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  23. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-  24. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  25. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  26. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  27. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-  28. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  29. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  30. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  31. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  32. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  33. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-  34. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  35. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  36. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  37. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-  38. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  39. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  40. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  41. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  42. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  43. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-  44. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  45. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  46. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  47. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-  48. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  49. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  50. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  51. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  52. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  53. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-  54. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-  55. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  56. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-  57. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
-  58. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
-  59. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
-  60. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-sass-0.9.1/lib/sprockets/sass/sass_template.rb:40:in `evaluate'
-  61. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/tilt-1.3.7/lib/tilt/template.rb:77:in `render'
-  62. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:197:in `block in evaluate'
-  63. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `each'
-  64. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/context.rb:194:in `evaluate'
-  65. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/processed_asset.rb:12:in `initialize'
-  66. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `new'
-  67. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:374:in `block in build_asset'
-  68. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:395:in `circular_call_protection'
-  69. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:373:in `build_asset'
-  70. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
-  71. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
-  72. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
-  73. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
-  74. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
-  75. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/bundled_asset.rb:16:in `initialize'
-  76. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `new'
-  77. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:377:in `build_asset'
-  78. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:94:in `block in build_asset'
-  79. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/caching.rb:51:in `cache_asset'
-  80. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:93:in `build_asset'
-  81. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:287:in `find_asset'
-  82. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/index.rb:61:in `find_asset'
-  83. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/environment.rb:75:in `find_asset'
-  84. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:295:in `[]'
-  85. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:325:in `block in find_asset_path'
-  86. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:146:in `block in resolve'
-  87. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:142:in `block in match'
-  88. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:134:in `each'
-  89. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:134:in `match'
-  90. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:113:in `block in find_in_paths'
-  91. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:112:in `each'
-  92. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:112:in `find_in_paths'
-  93. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:63:in `block in find'
-  94. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:57:in `each'
-  95. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/index.rb:57:in `find'
-  96. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/hike-1.2.2/lib/hike/trail.rb:139:in `find'
-  97. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-2.8.2/lib/sprockets/base.rb:130:in `resolve'
-  98. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:324:in `find_asset_path'
-  99. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/sprockets-helpers-1.0.0/lib/sprockets/helpers.rb:128:in `asset_path'
-  100. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-sprockets-filter-0.0.2/lib/nanoc/helpers/sprockets.rb:28:in `asset_path'
-  101. ./Rules:34:in `block in load'
-  102. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
-  103. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
-  104. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:238:in `block (2 levels) in route_reps'
-  105. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:236:in `each_pair'
-  106. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:236:in `block in route_reps'
-  107. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:231:in `each'
-  108. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:231:in `route_reps'
-  109. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:123:in `load'
-  110. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:82:in `run'
-  111. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:58:in `compile'
-  112. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/watch.rb:42:in `block in run'
-  113. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/watch.rb:78:in `call'
-  114. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/watch.rb:78:in `block in run'
-  115. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-  116. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-  117. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-  118. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-  119. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-  120. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-  ... 123 more lines omitted. See full crash log for details.
+  0. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/erb.rb:838:in `eval'
+  1. /Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/erb.rb:838:in `result'
+  2. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/filters/erb.rb:34:in `run'
+  3. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  4. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/result_data/item_rep.rb:344:in `filter'
+  5. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
+  6. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule_context.rb:55:in `filter'
+  7. ./Rules:23:in `block in load'
+  8. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  9. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  10. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  11. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  12. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  13. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  14. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  15. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  16. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/compile.rb:325:in `run'
+  17. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  18. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  19. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  20. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:13:in `call'
+  21. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  22. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  23. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  24. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  25. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  26. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli.rb:52:in `block in run'
+  27. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  28. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  29. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli.rb:50:in `run'
+  30. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/bin/nanoc:19:in `<top (required)>'
+  31. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin/nanoc:19:in `load'
+  32. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin/nanoc:19:in `<main>'
+  33. /Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin/ruby_noexec_wrapper:14:in `eval'
+  ... 36 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -194,13 +108,13 @@ Darwin CentroBusiness 11.4.2 Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 P
 
 ===== ENVIRONMENT:
 
-Apple_PubSub_Socket_Render => "/tmp/launch-ozgNQh/Render"
-Apple_Ubiquity_Message => "/tmp/launch-FucANA/Apple_Ubiquity_Message"
+Apple_PubSub_Socket_Render => "/tmp/launch-kiwNiz/Render"
+Apple_Ubiquity_Message => "/tmp/launch-xIT9Xa/Apple_Ubiquity_Message"
 BUNDLE_BIN_PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/gems/bundler-1.3.5/bin/bundle"
 BUNDLE_GEMFILE => "/Users/simonwalther/Development/Clients/2dsf/website/Gemfile"
 COLORFGBG => "7;0"
 COMMAND_MODE => "unix2003"
-DISPLAY => "/tmp/launch-0uZz06/org.x:0"
+DISPLAY => "/tmp/launch-5CyfCS/org.x:0"
 EDITOR => "mvim"
 GEM_HOME => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286"
 GEM_PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286:/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286@global"
@@ -208,10 +122,11 @@ GIT_EDITOR => "mvim -f -c 'au VimLeave * !open -a iTerm'"
 HOME => "/Users/simonwalther"
 IRBRC => "/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/.irbrc"
 ITERM_PROFILE => "Default"
-ITERM_SESSION_ID => "w0t0p1"
+ITERM_SESSION_ID => "w0t0p0"
 LC_CTYPE => "UTF-8"
 LOGNAME => "simonwalther"
 MY_RUBY_HOME => "/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286"
+OLDPWD => "/Users/simonwalther"
 PATH => "/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286/bin:/Users/simonwalther/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/simonwalther/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/simonwalther/.rvm/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 PWD => "/Users/simonwalther/Development/Clients/2dsf/website"
 RACK_ENV => "development"
@@ -221,7 +136,7 @@ RUBY_VERSION => "ruby-1.9.3-p286"
 SHELL => "/bin/bash"
 SHLVL => "1"
 SIGNED_COOKIE_SECRET_TOKEN => "bc84357593086ce26e825f80ab48d4d7a1b09a6306ed04801f1494d9b7e92ded0f93001012aa29ae59a76ef573f8d76efe05226e0d16fb4d8769ead18ad8ab12"
-SSH_AUTH_SOCK => "/tmp/launch-28d8W4/Listeners"
+SSH_AUTH_SOCK => "/tmp/launch-tugRB7/Listeners"
 TERM => "xterm-256color"
 TERM_PROGRAM => "iTerm.app"
 TMPDIR => "/var/folders/5s/ccw2x0nj4wddkwd2xmm3g2wm0000gn/T/"
@@ -234,10 +149,8 @@ _first => "0"
 _second => "1"
 escape_flag => "1"
 rvm_bin_path => "/Users/simonwalther/.rvm/bin"
-rvm_env_string => "ruby-1.9.3-p286"
 rvm_path => "/Users/simonwalther/.rvm"
 rvm_prefix => "/Users/simonwalther"
-rvm_ruby_string => "ruby-1.9.3-p286"
 rvm_version => "1.16.16 (stable)"
 
 ===== GEMFILE.LOCK:

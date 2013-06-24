@@ -19,6 +19,11 @@ compile %r{/assets/(stylesheets|javascripts)/.+/}, :rep => :gzip do
   filter :gzip
 end
 
+compile '/jeux/*/' do
+  filter :erb
+  layout 'jeux' # this is differerent
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -40,6 +45,10 @@ end
 
 route '/htaccess/' do
   '/.htaccess'
+end
+
+route '/jeux/*', :rep => :jeux do
+  item.identifier
 end
 
 route '*' do
