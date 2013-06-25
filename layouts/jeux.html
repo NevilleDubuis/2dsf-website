@@ -47,16 +47,20 @@
           <%= content_for(item, :actuel) %>
         </div>
         <hr />
-        <div id="row">
-          <%= content_for(item, :gamme) %>
-        </div>
-        <div id="bigRow">
+        <div class="row">
+          <div class="span5">
+            <%= content_for(item, :gamme) %>
+          </div>
           <h2><br /></h2>
-          <%= content_for(item, :description) %>
+          <div class="span7">
+            <%= content_for(item, :description) %>
+          </div>
         </div>
         <div class="both"></div>
         <hr />
-        <%= content_for(item, :book) %>
+        <div class="row">
+          <%= content_for(item, :book) %>
+        </div>
       </div>
       <div class="both"></div>
       <footer>

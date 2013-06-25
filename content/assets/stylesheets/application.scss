@@ -1,3 +1,5 @@
+// =require bootstrap.min.css
+
 /***********************/
 /******* IMPORT ********/
 /***********************/
@@ -138,17 +140,6 @@ p.copyright {
   font-size: 13px;
 }
 
-#row {
-  float: left;
-  width: 340px;
-}
-
-#bigRow {
-  float: right;
-  width: 600px;
-  margin-left: 20px;
-}
-
 h3 {
   color: $red;
 }
@@ -268,8 +259,7 @@ h3 {
 }
 
 .book {
-  float: left;
-  margin-left: 80px;
+  margin-left: 58px;
 }
 
 .goodiesImg {
@@ -314,5 +304,4 @@ h3 {
   display: inline;
   max-width: 145px;
   max-height: 266px;
-  float: left;
 }

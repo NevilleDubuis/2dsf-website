@@ -30,12 +30,17 @@
 <% end %>
 
 <% content_for :book do %>
-  <img src="<%= image_path('VDO.jpg') %>" class="newsimg"></img>
-  <img src="<%= image_path('Ecran.jpg') %>" class="newsimg"></img>
-  <img src="<%= image_path('Atlas.jpg') %>" class="newsimg"></img>
-  <div class="both"></div>
-  <h2 class="book">VDO</h2>
-  <h2 class="book">ECRAN</h2>
-  <h2 class="book">ATLAS</h2>
+  <div class="span4">
+    <img src="<%= image_path('VDO.jpg') %>" class="newsimg"></img>
+    <h2 class="book">VDO</h2>
+  </div>
+  <div class="span4">
+    <img src="<%= image_path('Ecran.jpg') %>" class="newsimg"></img>
+    <h2 class="book">ECRAN</h2>
+  </div>
+  <div class="span4">
+    <img src="<%= image_path('Atlas.jpg') %>" class="newsimg"></img>
+    <h2 class="book">ATLAS</h2>
+  </div>
   <div class="both"></div>
 <% end %>

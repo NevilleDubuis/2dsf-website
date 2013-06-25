@@ -1,41 +1,54 @@
 <% content_for :articleBox do %>
-    <div id="newsBox" class="nightProwler_landscape">
-      <p>il n'y a pas d'honneur<br />chez les voleurs...<br />Nightprowler 2</p>
-    </div>
+  <div id="newsBox" class="tigresVolantsLandscape">
+    <p>La sphère vous attend <br/>ou pas ...<br/>TIGRES VOLANTS</p>
+  </div>
 <% end %>
 
 <% content_for :actuel do %>
   <h2 class="titleInline">ACTUEL</h2>
-  <p>Les impostures d'Arlam, supplément races et magie est en chantier</p>
+  <p>Le domaine des trois sources, aussi connu comme la campagne Lupanar est sorti!</p>
 <% end %>
 
 <% content_for :gamme do %>
   <h2>GAMME</h2>
-  <h1>NightProwler 2</h1>
+  <h1>Tigres Volants</h1>
   <hr class="small" />
   <div id="nav_books">
-    <img src="<%= image_path('Atlas.jpg') %>" class="newsimg books" id="item4"></img>
-    <img src="<%= image_path('VDO.jpg') %>" class="newsimg books" id="item3"></img>
-    <img src="<%= image_path('Ecran.jpg') %>" class="newsimg books" id="item2"></img>
-    <img src="<%= image_path('nightProwler.jpg') %>" class="newsimg books" id="item1"></img>
+    <img src="<%= image_path('campagneLupanar.jpg') %>" class="newsimg books" id="item5"></img>
+    <img src="<%= image_path('Ergartis.jpg') %>" class="newsimg books" id="item4"></img>
+    <img src="<%= image_path('Dame_de_Fer.jpg') %>" class="newsimg books" id="item3"></img>
+    <img src="<%= image_path('Copatransit.jpg') %>" class="newsimg books" id="item2"></img>
+    <img src="<%= image_path('tigresVolants.jpg') %>" class="newsimg books" id="item1"></img>
   </div>
 <% end %>
 
 <% content_for :description do %>
-  <h1>Nightprowler 2, livre de base</h1>
+  <h1>Tigres Volants 3, Livre de base</h1>
   <hr class="small" />
-  <p>Description</p>
-  <p>Le livre de base de la seconde édition de Nightprowler contient tout le matériel utile pour jouer dans l’univers des Sept Cités. Après une description détaillée du monde, de son histoire et de ses peuples vous découvrirez un système de création de personnage permettant aux joueurs de modeler un crimi- nel consistant. Il devra choisir parmi 32 spécialités qui lui donneront ses compétences de base avant de décider de sa race, son origine sociale, l’événement qui l’a fait basculer dans la pègre et d’autres traits qui affineront ses capacités et lui donneront une profondeur intéressante dés la première partie. Le chapitre suivant vous expliquera tout sur le fonctionnement du système de jeu dynamique développé pour cette nouvelle version. Un système de duel permet de gérer les combats mortels qu’il faut souvent mieux éviter ainsi que la course poursuite, activité très répandue chez les voleurs.</p>
-  <a href="#" class="lightbox_link"><div class="circle"></div><div class="circle"></div><div class="circle"></div></a>
+    <p>Auteur : Stéphane 'Alias' Galley Couverture : Fufu Frauenwhal, Xaël, Jess</p>
+    <p>Illustrateurs : DeDorgoth, Defcombeta, Eliott, Fufu Frauenwhal, Lohran... Description</p>
+    <p>Tigres Volants est un jeu de rôle de science-fiction qui explore les conséquences de la rencontre de deux cultures : une civilisation qui a dominé la galaxie pendant près de dix mille ans, rythmés par l’espérance de vie millénaire de ses habitants, et les Terriens, qui, après quatre guerres mondiales, déboulent avec plein d’idées saugrenues : démocratie, moteur à explosion, vélo, capitalisme, football...</p>
+    <p>S’il s’agissait de peuples complètement différents, l’affaire se serait sans doute réglée à coups de guerre et autres explications administratives. Mais les choses sont plus compliquées : les deux civilisations sont originaires de la Terre et forment deux branches de la même évolution.</p>
+    <p>La Sphère est le terme utilisé pour désigner l’espace connu, qui fait environ 250 années-lumière de rayon. Un vaisseau rapide traverserait la Sphère en un peu plus de six mois. La Sphère est centrée sur Fantir, planète-capitale du Cepmes ; le Cepmes est une sorte d’ONU galactique, en plus gros, plus compliqué et (un peu) plus efficace.</p>
+    <p>Les racines de la civilisation atlano-eyldarin plongent loin dans le passé de la Terre, qu’elle a quittée avant la dernière glaciation. Leur culture actuelle descend de l’Arlauriëntur, un empire interstellaire qui, pendant dix mille ans, a dominé ce côté de la galaxie.</p>
 <% end %>
 
 <% content_for :book do %>
-  <img src="<%= image_path('VDO.jpg') %>" class="newsimg"></img>
-  <img src="<%= image_path('Ecran.jpg') %>" class="newsimg"></img>
-  <img src="<%= image_path('Atlas.jpg') %>" class="newsimg"></img>
-  <div class="both"></div>
-  <h2 class="book">VDO</h2>
-  <h2 class="book">ECRAN</h2>
-  <h2 class="book">ATLAS</h2>
+  <div class="span3">
+    <img src="<%= image_path('Copatransit.jpg') %>" class="newsimg"></img>
+    <h2 class="book">BT1</h2>
+  </div>
+  <div class="span3">
+    <img src="<%= image_path('Dame_de_Fer.jpg') %>" class="newsimg"></img>
+    <h2 class="book">BT2</h2>
+  </div>
+  <div class="span3">
+    <img src="<%= image_path('Ergartis.jpg') %>" class="newsimg"></img>
+    <h2 class="book">BT3</h2>
+  </div>
+  <div class="span3">
+    <img src="<%= image_path('campagneLupanar.jpg') %>" class="newsimg"></img>
+    <h2 class="book">CAMPAGNE</h2>
+  </div>
   <div class="both"></div>
 <% end %>
