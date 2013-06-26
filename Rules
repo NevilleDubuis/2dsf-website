@@ -47,10 +47,6 @@ route '/htaccess/' do
   '/.htaccess'
 end
 
-route '/jeux/*', :rep => :jeux do
-  item.identifier
-end
-
 route '*' do
   if item.children.size > 0 || item.identifier == '/'
     item.identifier + 'index.html'

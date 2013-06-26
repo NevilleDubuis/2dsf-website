@@ -1,71 +1,39 @@
-<!DOCTYPE HTML>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="<%= stylesheet_path 'application' %>" media="screen">
-    <script src="<%= javascript_path 'application' %>"></script>
-  </head>
-  <body>
-    <div id ="main">
-      <header>
-        <h1 class="logo">2d sans faces société coopérative d'édition</h1>
-        <div id="social">
-          <p>Contact</p>
-          <a href="https://www.facebook.com/2dSansFaces"><img src="/assets/facebook_button.png" class="social"></img></a>
-          <a href="https://plus.google.com/110673719649168401226/about"><img src="/assets/g+.png" class="social"></img></a>
-          <p>RSS</p>
-          <a href="https://www.facebook.com/2dSansFaces"><img src="/assets/rss.jpg" class="social"></img></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="/">ACCUEIL</a></li>
-            <a class="NavBarLink" href="#"><li>JEUX</li></a>
-            <ul class="NavBarLi">
-              <a class="NavBarLink2" href="#"><li>JEUX</li></a>
-              <a href="/jeux/nightProwler.html"><li>nightProwler</li>
-              <a href="/jeux/tigresVolants.html"><li>Tigres Volants</li></a>
-              <a href="/jeux/itrasBy.html"><li>Itras By</li></a>
-            </ul>
-            <li><a href="http://www.lulu.com/spotlight/2dsf">BOUTIQUE</a></li>
-            <li><a href="http://forums.2dsansfaces.com/">FORUM</a></li>
-            <li>COOPERATIVE</li>
-            <li><a href="../goodies.html">GOODIES</a></li>
-            <li>CONTACT</li>
-          </ul>
-        </nav>
-        <div class="both"></div>
-        <div id="topArticleBox"></div>
-        <section id="articleBox">
-          <article>
-            <%= content_for(item, :articleBox) %>
-          </article>
-        </section>
-      </header>
-      <div id="content">
-        <div class="inline">
-          <%= content_for(item, :actuel) %>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="span5">
-            <%= content_for(item, :gamme) %>
-          </div>
-          <h2><br /></h2>
-          <div class="span7">
-            <%= content_for(item, :description) %>
-          </div>
-        </div>
-        <div class="both"></div>
-        <hr />
-        <div class="row">
-          <%= content_for(item, :book) %>
+<% render 'default' do %>
+  <div id="content">
+    <div class="inline">
+      <h2 class="titleInline">ACTUEL</h2>
+      <%= content_for(product_line_of_product(item), :news) %>
+      <p><%= item[:news] %></p>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="span5">
+        <h2>GAMME</h2>
+        <h1><%= item[:name] %></h1>
+        <hr class="small" />
+        <div id="nav_books">
+          <% product_siblings(item).each do |item| %>
+            <img src="<%= product_image_path item %>" class="newsimg books" id="item"></img>
+          <% end %>
         </div>
       </div>
-      <div class="both"></div>
-      <footer>
-        <p class="copyright">©2006-2013 2d Sans Faces, société coopérative - développé par Liquid Concept</p>
-      </footer>
+      <h2><br /></h2>
+      <div class="span7">
+        <h1><%= item[:book] %></h1><hr class="small" />
+        <%= content_for(item, :description) %>
+        <a href="#" class="lightbox_link item"><div class="circle"></div><div class="circle"></div><div class="circle"></div></a>
+      </div>
     </div>
-  </body>
-</html>
+    <div class="both"></div>
+    <hr />
+    <div class="row">
+      <div class="span4">
+        <% product_siblings(item).each do |item| %>
+          <img src="<%= product_image_path item %>" class="newsimg"></img>
+          <h2 class="book"><%= item[:name] %></h2>
+        <% end %>
+      </div>
+      <div class="both"></div>
+    </div>
+  </div>
+<% end %>

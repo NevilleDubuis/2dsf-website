@@ -4,6 +4,7 @@
 /******* IMPORT ********/
 /***********************/
 @import "compass/reset";
+@import "compass/css3";
 @import "compass/typography/text/replacement";  /*FEATURES FOR THE LOGO*/
 @import "compass/typography/lists/horizontal-list"; /* FEATURES FOR THE NAVBAR */
 @import "compass/css3/box-shadow";
@@ -185,6 +186,41 @@ h3 {
     left: 120px;
     z-index: 1000;
   }
+}
+
+/******************/
+/*    OVERLAY     */
+/******************/
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.background {
+      background: $grey;
+      @include opacity(0.2);
+    }
+
+    &.loader {
+      background: inline-image('loader.gif') center no-repeat;
+    }
+  }
+
+}
+
+body > .overlay {
+  position: fixed;
 }
 
 /******************/

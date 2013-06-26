@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 gem 'rack'
 
 group :nanoc do
-  gem 'nanoc'
+  gem 'nanoc', '3.6.3'
 
   gem 'sass'
   gem 'compass'
@@ -16,6 +16,8 @@ group :nanoc do
   gem 'nanoc-sprockets-filter'
   gem 'nanoc-gzip-filter'
   gem 'uglifier'
+
+  gem "sinatra"
 end
 
 group :development do

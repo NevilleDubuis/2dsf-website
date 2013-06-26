@@ -23,14 +23,14 @@
             <a class="NavBarLink" href="#"><li>JEUX</li></a>
             <ul class="NavBarLi">
               <a class="NavBarLink2" href="#"><li>JEUX</li></a>
-              <a href="/jeux/nightProwler.html"><li>nightProwler</li>
-              <a href="/jeux/tigresVolants.html"><li>Tigres Volants</li></a>
-              <a href="/jeux/itrasBy.html"><li>Itras By</li></a>
+              <li><%= link_to 'Night Prowler', '/jeux/nightprowler' %></li>
+              <li><%= link_to 'Tigres Volants', '/jeux/tigresvolants' %></li>
+              <li><%= link_to 'Itras by', '/jeux/itrasby.html' %></li>
             </ul>
             <li><a href="http://www.lulu.com/spotlight/2dsf">BOUTIQUE</a></li>
             <li><a href="http://forums.2dsansfaces.com/">FORUM</a></li>
             <li>COOPERATIVE</li>
-            <li><a href="goodies.html">GOODIES</a></li>
+            <li><%= link_to 'GOODIES', '/../goodies.html' %></li>
             <li>CONTACT</li>
           </ul>
         </nav>
@@ -38,9 +38,9 @@
         <div id="topArticleBox"></div>
         <section id="articleBox">
           <article>
-            <%= content_for(item, :articleBox) %>
-            <div class="inline">
-              <%= content_for(item, :actuel) %>
+            <%= content_for(item, :header) %>
+            <div id="newsBox" class="<%= item[:header_class] %>">
+              <p><%= item[:header_legend] %></p>
             </div>
           </article>
         </section>
