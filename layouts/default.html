@@ -7,7 +7,7 @@
     <script src="<%= javascript_path 'application' %>"></script>
   </head>
   <body>
-    <div id ="main">
+    <section id="main">
       <header>
         <h1 class="logo">2d sans faces société coopérative d'édition</h1>
         <div id="social">
@@ -45,12 +45,16 @@
           </article>
         </section>
       </header>
-      <div id="content">
+      <section id="content">
         <%= yield %>
-      </div>
+      </section>
       <footer>
         <p class="copyright">©2006-2013 2d Sans Faces, société coopérative - développé par Liquid Concept</p>
       </footer>
-    </div>
+    </section>
+    <section id="details">
+    <div class="close">x</div>
+      <article>Content Lightbox</article>
+    </section>
   </body>
 </html>

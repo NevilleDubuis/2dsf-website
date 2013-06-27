@@ -33,7 +33,7 @@ body {
   font-family: arial;
 }
 
-div#main {
+section#main {
   margin: 0 auto;
   width: $websiteW;
 }
@@ -199,6 +199,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2000;
 
   * {
     position: absolute;
@@ -221,6 +222,47 @@ h3 {
 
 body > .overlay {
   position: fixed;
+}
+
+/******************/
+/*    LIGHTBOX    */
+/******************/
+
+#item_lightbox {
+  cursor: pointer;
+}
+
+#details {
+  position: relative;
+  display: none;
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px $dark-grey solid;
+  background-color: white;
+  z-index: 3000;
+
+  .close {
+    font-size: 2em;
+    color: $dark-grey;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 3010;
+  }
+
+  article {
+    $width: 900px;
+    $padding: (960px - $width) / 2;
+    width: $width;
+    padding: $padding;
+    display: none;
+    position: relative;
+    z-index: 3005;
+    @include pie-clearfix;
+  }
 }
 
 /******************/
@@ -292,11 +334,6 @@ body > .overlay {
   background-color: black;
   float: left;
   margin: 3px;
-}
-
-.book {
-  width: 100px;
-  margin: 0px 0px;
 }
 
 .goodiesImg {
