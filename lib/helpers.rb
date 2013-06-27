@@ -17,7 +17,7 @@ def products(product_line_item = :all)
     if product_line_item == :all
       items.select {|item| item.identifier =~ %r{^#{PRODUCT_LINE_ROOT}} }
     else
-      items.select {|item| item.identifier =~ %r{^#{product_line_item.identifier}/[^/]+/$} }
+      items.select {|item| item.identifier =~ %r{^#{product_line_item.identifier}(?:[^/]+/)?$} }
     end
   end
 end

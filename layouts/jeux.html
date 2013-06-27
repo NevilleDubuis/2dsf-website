@@ -12,8 +12,8 @@
         <h1><%= item[:name] %></h1>
         <hr class="small" />
         <div id="nav_books">
-          <% product_siblings(item).each do |item| %>
-            <img src="<%= product_image_path item %>" class="newsimg books" id="item"></img>
+          <% product_siblings(item).each_with_index do |item, index| %>
+            <img src="<%= product_image_path item %>" class="newsimg books" id="item_<%= index %>"></img>
           <% end %>
         </div>
       </div>
@@ -21,16 +21,18 @@
       <div class="span7">
         <h1><%= item[:book] %></h1><hr class="small" />
         <%= content_for(item, :description) %>
-        <a href="#" class="lightbox_link item"><div class="circle"></div><div class="circle"></div><div class="circle"></div></a>
+        <a href="#" class="lightbox_link"><div class="circle"></div><div class="circle"></div><div class="circle"></div></a>
       </div>
     </div>
     <div class="both"></div>
     <hr />
     <div class="row">
-      <div class="span4">
+      <div class="span12">
         <% product_siblings(item).each do |item| %>
-          <img src="<%= product_image_path item %>" class="newsimg"></img>
-          <h2 class="book"><%= item[:name] %></h2>
+          <span class="span2">
+            <img src="<%= product_image_path item %>" class="newsimg"></img>
+            <p><%= item[:name]%></p>
+          </span>
         <% end %>
       </div>
       <div class="both"></div>
