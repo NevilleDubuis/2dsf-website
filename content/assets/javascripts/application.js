@@ -20,15 +20,25 @@ $(function($, undefined) {
   })();
 
   // Navbar Jeux
-  $('.NavBarLi').hide();
-  $('.NavBarLink').on('click', function(event) {
+  $('.NavBarLi2').hide();
+
+  $('.NavBarLi').hover(function() {
     event.preventDefault();
-    $('.NavBarLi').fadeIn('fast');
+
+    $(this).addClass('active').queue(function() {
+      $('.NavBarLi2').slideDown('slow');
+      $(this).dequeue();
+    });
   });
 
-  $('.NavBarLink2').on('click', function(event) {
+  $('.NavBarLi').mouseleave(function() {
     event.preventDefault();
-    $('.NavBarLi').fadeOut('fast');
+    var $this = $(this);
+
+    $('.NavBarLi2').slideUp('slow').queue(function() {
+      $this.removeClass('active');
+      $(this).dequeue();
+    });
   });
 
   // Overlay
@@ -139,8 +149,3 @@ $(function($, undefined) {
     $('#details .close').on('click', hideDetail);
   });
 })(jQuery);
-
-
-
-
-

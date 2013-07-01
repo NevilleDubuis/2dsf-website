@@ -18,15 +18,16 @@
           <a href="https://www.facebook.com/2dSansFaces"><img src="/assets/rss.jpg" class="social"></img></a>
         </div>
         <nav>
-          <ul>
+          <ul class="navbar">
             <li><a href="/">ACCUEIL</a></li>
-            <a class="NavBarLink" href="#"><li>JEUX</li></a>
-            <ul class="NavBarLi">
-              <a class="NavBarLink2" href="#"><li>JEUX</li></a>
-              <li><%= link_to 'Night Prowler', '/jeux/nightprowler' %></li>
-              <li><%= link_to 'Tigres Volants', '/jeux/tigresvolants' %></li>
-              <li><%= link_to 'Itras by', '/jeux/itrasby.html' %></li>
-            </ul>
+            <li class="NavBarLi">
+              <a class="NavBarLink" href="#">JEUX</a>
+              <ul class="NavBarLi2">
+                <li><%= link_to 'Night Prowler', '/jeux/nightprowler' %></li>
+                <li><%= link_to 'Tigres Volants', '/jeux/tigresvolants' %></li>
+                <li><%= link_to 'Itras by', '/jeux/itrasby.html' %></li>
+              </ul>
+            </li>
             <li><a href="http://www.lulu.com/spotlight/2dsf">BOUTIQUE</a></li>
             <li><a href="http://forums.2dsansfaces.com/">FORUM</a></li>
             <li>COOPERATIVE</li>
@@ -39,8 +40,8 @@
         <section id="articleBox">
           <article>
             <%= content_for(item, :header) %>
-            <div id="newsBox" class="<%= item[:header_class] %>">
-              <p><%= item[:header_legend] %></p>
+            <div id="newsBox" class="<%= product_attr(item, :header_class) %>">
+              <p><%= product_attr(item, :header_legend) %></p>
             </div>
           </article>
         </section>
