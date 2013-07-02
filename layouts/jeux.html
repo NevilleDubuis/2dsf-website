@@ -26,16 +26,25 @@
     </div>
     <div class="both"></div>
     <hr />
-    <div class="row">
-      <div class="span12">
-        <% product_siblings(item).each do |item| %>
-          <span class="span2">
-            <img src="<%= product_image_path item %>" class="newsimg"></img>
-            <p><%= item[:name]%></p>
-          </span>
-        <% end %>
+    <div class="row" id="products_slider">
+      <div class="arrows previous"><img src="<%= image_path('arrow_left.png') %>"></div>
+      <div class="arrows next"><img src="<%= image_path('arrow_right.png') %>"></div>
+      <div class="box">
+        <div class="overflow">
+          <% product_siblings(item).each_with_index do |item, index| %>
+            <% if index % 4 == 0 %>
+              <div class="display">
+            <% end %>
+            <div class="span2">
+              <img src="<%= product_image_path item %>" class="newsimg <%= index %>"></img>
+              <p><%= item[:name]%></p>
+            </div>
+            <% if index % 4 == 3 %>
+              </div>
+             <% end %>
+          <% end %>
+        </div>
       </div>
-      <div class="both"></div>
     </div>
   </div>
 <% end %>
