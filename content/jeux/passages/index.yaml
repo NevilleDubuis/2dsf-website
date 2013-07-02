@@ -1,7 +1,7 @@
-key: ergartis
-name: Ergartis la course du loup
+key: passages
+name: Passages
 header_class: passages_landscape
 header_legend: Legend
-book: Itrasby book
+book: "Passages, le livre"
 news: Content news
-order: 3
+order: 1
