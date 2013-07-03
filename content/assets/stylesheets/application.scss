@@ -17,6 +17,7 @@ $grey: #e5e5e5;
 $grey2: #bababa;
 $dark-grey: #d0d0d0;
 $red: #9a0013;
+$gold: #A96C00;
 
 /**********************/
 /******* OTHER ********/
@@ -41,6 +42,10 @@ section#main {
 .small {
   height: 1px;
   margin: 5px;
+}
+
+a:hover {
+  color: #A96C00;
 }
 
 h2 {
@@ -208,7 +213,7 @@ h3 {
     }
 
     &.loader {
-      /*background: inline-image('loader.gif') center no-repeat;*/
+      background: inline-image('loader.gif') center no-repeat;
     }
   }
 
@@ -308,65 +313,43 @@ body > .overlay {
 /**** GENERAL *****/
 /******************/
 
-#lightbox {
-  width: 1150px;
-  position: absolute;
-  top: 0px;
-  margin: 20px auto;
-  padding: 20px 40px 65px 40px;
-  margin-left: -401px;
-  border: solid #b58000 5px;
-  background-color: white;
-
-
-  #lightboxScroll {
-    height: 800px;
-    overflow: scroll;
-  }
-
-  #close {
-    float: right;
-    width: 10px;
-
-    a {
-      text-decoration: none;
-
-      span {
-        width: 10px;
-        color: #b58000;
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
 .navbar {
   position: relative;
 
   .NavBarLi {
-  float: left;
-  margin-top: -11px;
-  border: 1px solid white;
-  padding-top: 9px;
+    float: left;
+    margin-top: -9px;
+    border: 1px solid white;
+    z-index: 1000;
+    padding-top: 9px;
 
     &.active {
       border: 1px solid black;
-      width: 89px;
     }
   }
 
+  #blank {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 2000;
+    left: 87px;
+    top: 15px;
+    height: 5px;
+    width: 72px;
+  }
+
   .NavBarLi2 {
-  margin: 0;
-  display: none;
-  width: 119px;
-  border-top: none;
-  background-color: white;
-  position: absolute;
-  left: 86px;
-  border: 1px solid black;
-  padding-top: 20px;
-  border-top: none;
+    margin: 0;
+    display: none;
+    width: 119px;
+    border-top: none;
+    background-color: white;
+    position: absolute;
+    left: 86px;
+    z-index: 500;
+    border: 1px solid black;
+    padding-top: 10px;
 
     li:first-child {
       padding-left: 15px;

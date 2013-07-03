@@ -20,25 +20,23 @@ $(function($, undefined) {
   })();
 
   // Navbar Jeux
-  $('.NavBarLi2').hide();
+  var dropdownMenu = $('.NavBarLi2');
+  dropdownMenu.hide();
 
-  $('.NavBarLi').hover(function() {
+  $('.NavBarLi').hover(function(event) {
     event.preventDefault();
 
-    $(this).addClass('active').queue(function() {
-      $('.NavBarLi2').slideDown('slow');
-      $(this).dequeue();
-    });
-  });
+    $('#blank').show()
+    dropdownMenu.slideDown('fast');
+    $('.NavBarLi').addClass('active');
+    $('.NavBarLi').css('border', '1px solid black');
+  },
 
-  $('.NavBarLi').mouseleave(function() {
-    event.preventDefault();
-    var $this = $(this);
-
-    $('.NavBarLi2').slideUp('slow').queue(function() {
-      $this.removeClass('active');
-      $(this).dequeue();
-    });
+  function() {
+    $(this).removeClass('active');
+    $(this).css('border', '1px solid white');
+    dropdownMenu.slideUp('fast');
+    $('#blank').hide()
   });
 
   // Overlay
@@ -64,7 +62,6 @@ $(function($, undefined) {
 
   // LightBox Show
   var lightboxShow = function() {
-    console.log('click');
     var item_class = $(this).first();
     scrollPosition = $(window).scrollTop();
 
@@ -119,38 +116,59 @@ $(function($, undefined) {
   $('.box > .overflow > .display').first().addClass('current');
   $('.box > .overflow').css('position', 'relative');
 
+  if($('.box > .overflow > .current').next('.box > .overflow > .display').length === 0) {
+    $('.next').css({'opacity': '0.3',
+                    'cursor': 'default'
+                  });
+  }
+
+  if($('.box > .overflow > .current').prev('.box > .overflow > .display').length === 0) {
+    $('.previous').css({'opacity': '0.3',
+                    'cursor': 'default'
+                  });
+  }
+
   var scrollTo = function(event) {
     event.preventDefault();
     var move = "+=0";
     var side = "+=0";
     var current = $('.box > .overflow > .current');
-
-    if($(this).hasClass('next')) {
-      if($(current).next('.box > .overflow > .display').length > 0){
-        current.removeClass('current');
-        move = "-=" + current.outerWidth(true);
-        current.next('.box > .overflow > .display').addClass('current');
+    if(totalWidth > 800) {
+      if($(this).hasClass('next')) {
+        if($(current).next('.box > .overflow > .display').length > 0){
+          current.removeClass('current');
+          move = "-=" + current.outerWidth(true);
+          current.next('.box > .overflow > .display').addClass('current');
+        }
+      } else {
+        if($(current).prev('.box > .overflow > .display').length > 0){
+          current.removeClass('current');
+          move = "+=" + current.outerWidth(true);
+          current.prev('.box > .overflow > .display').addClass('current');
+        }
       }
-    } else {
-      if($(current).prev('.box > .overflow > .display').length > 0){
-        current.removeClass('current');
-        move = "+=" + current.outerWidth(true);
-        current.prev('.box > .overflow > .display').addClass('current');
+
+      $(event.currentTarget).parent().find('.box > .overflow').animate({left: move}, 1500);
+
+      if($('.box > .overflow > .current').next('.box > .overflow > .display').length === 0) {
+          $('.next').css({'opacity': '0.3',
+                          'cursor': 'default'
+                        });
+      } else {
+          $('.next').css({'opacity': '1.0',
+                              'cursor': 'pointer'
+                             });
       }
-    }
 
-    $(event.currentTarget).parent().find('.box > .overflow').animate({left: move}, 1500);
-
-    if($('.box > .overflow > .current').next('.box > .overflow > .display').length === 0) {
-      $('.next').fadeOut();
-    } else {
-      $('.next').fadeIn();
-    }
-
-    if($('.box > .overflow > .current').prev('.box > .overflow > .display').length === 0) {
-      $('.previous').fadeOut();
-    } else {
-      $('.previous').fadeIn();
+      if($('.box > .overflow > .current').prev('.box > .overflow > .display').length === 0) {
+        $('.previous').css({'opacity': '0.3',
+                            'cursor': 'default'
+                          });
+      } else {
+          $('.previous').css({'opacity': '1.0',
+                              'cursor': 'pointer'
+                             });
+      }
     }
   }
 
