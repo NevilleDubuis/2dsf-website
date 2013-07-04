@@ -21,6 +21,7 @@ $(function($, undefined) {
 
   // Navbar Jeux
   var dropdownMenu = $('.NavBarLi2');
+  var menu = $('.NavBarLi');
   dropdownMenu.hide();
 
   $('.NavBarLi').hover(function(event) {
@@ -33,10 +34,11 @@ $(function($, undefined) {
   },
 
   function() {
-    $(this).removeClass('active');
-    $(this).css('border', '1px solid white');
-    dropdownMenu.slideUp('fast');
-    $('#blank').hide()
+    dropdownMenu.slideUp('fast', function() {
+      menu.removeClass('active');
+      menu.css('border', '1px solid white');
+      $('#blank').hide()
+    });
   });
 
   // Overlay
