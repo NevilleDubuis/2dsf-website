@@ -2,12 +2,14 @@
   <div id="newsBox" class="contact_landscape" /></div>
 <% end %>
 
-<img src="/assets/news.png" class="news"></img>
+<img src="<%= image_path('+_sign.png') %>" class="news"></img>
+<h5>NEWS</h5>
+<div class="both"></div>
 <p>Vous voici parvenu dans le site de 2d Sans Faces. L'éditeur des jeux de rôles Nightprowler. Tigres Volants et Nobilis. Vous trouverez ici toutes sortes d'informations concernant nos activités éditoriales et nos produits actuellement commercialisés ou encore en développement.</p>
 <hr />
 <div class="row">
   <div class="span6">
-    <h2>Nos activités vous intéressent?</h2>
+    <h4>Nos activités vous intéressent ?</h4>
     <hr class="small" />
     <p>Vous souhaitez en savoir plus sur nos</p>
     <p>activités?</p>
@@ -17,25 +19,27 @@
     <p>Remplissez le formulaire ad hoc et nous</p>
     <p>nous ferons un plaisir de vous recontacter.</p>
     <br />
-    <h2>ADRESSE<h2>
+    <h2>ADRESSE</h2>
+    <hr class="small" />
     <p>2d sans faces</p>
     <p>Société coopérative</p>
     <p>Case postale 5850</p>
     <p>CH - 1002 Lausanne</p>
   </div>
   <div class="span6">
+    <h4>CONTACTEZ-NOUS</h4>
+    <hr class="small" />
     <form method="POST" action="/index">
-      <h2>CONTACTEZ-NOUS</h2>
-      <hr class="small" />
-      <p>Nom</p>
-      <input name="message_request[name]" size="20" type="text" value="" required></input>
-      <p>Prénom</p>
-      <input name="message_request[firstname]" size="20" type="text" value="" required></input>
-      <p>E-mail</p>
-      <input name="message_request[mail]" size="20" type="text" value="" required></input>
-      <p>Madame Monsieur</p>
-      <input name="message_request[genre]" size="20" type="text" value="" required></input>
-      <p>Je souhaite être tenu(e) au courant de vos activités</p>
+      <div class="input"><p>Nom</p><input name="message_request[name]" size="80" type="text" value="" required></input></div>
+      <div class="input"><p>Prénom</p><input name="message_request[firstname]" size="80" type="text" value="" required></input></div>
+      <div class="input"><p>E-mail</p><input name="message_request[mail]" size="80" type="email" pattern="^[_a-z0-9-A-Z]+(\.[_a-z-A-Z0-9-]+)*@[a-z-A-Z0-9-]+(\.[a-z-A-Z0-9-]+)*(\.[a-z]{2,4})$" value="" required></input></div>
+      <div class="both"></div>
+      <p class="checkbox">Madame</p>
+      <input name="message_request[genre]" size="20" type = "radio" value="femme" class="checkbox" required></input>
+      <p class="checkbox"> Monsieur</p>
+      <input name="message_request[genre]" size="20" type = "radio" value="homme" class="checkbox" required></input>
+      <div class="both"></div>
+      <p class="littlemargin">Je souhaite être tenu(e) au courant de vos activités</p>
       <p>Votre message</p>
       <textarea name="message_request[comment]" size="20" type="text" value="" required></textarea>
       <input name="commit" type="submit" value="Envoyer"></input>

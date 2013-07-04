@@ -1,8 +1,13 @@
 // =require modernizr
 // =require jquery
+// =require jquery-ui
 // =require underscore
+// =require jquery-h5validate
 
 $(function($, undefined) {
+
+  // validation init
+  $('form').h5Validate();
 
   scrollbarWidth = (function() {
     var $inner = jQuery('<div style="width: 100%; height:200px;">test</div>'),

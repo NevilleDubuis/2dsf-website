@@ -1,8 +1,10 @@
 <% render 'default' do %>
   <div id="content">
     <div class="inline">
-      <h2 class="titleInline">ACTUEL</h2>
       <%= content_for(product_line_of_product(item), :news) %>
+      <img src="<%= image_path('+_sign.png') %>" class="news"></img>
+      <h5>NEWS</h5>
+      <div class="both"></div>
       <p><%= item[:news] %></p>
     </div>
     <hr />

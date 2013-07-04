@@ -7,6 +7,7 @@
 @import "compass/typography/lists/horizontal-list"; /* FEATURES FOR THE NAVBAR */
 @import "compass/css3/box-shadow";
 
+@import "jquery-ui";
 @import "bootstrap";
 
 /**********************/
@@ -15,7 +16,7 @@
 
 $grey: #e5e5e5;
 $grey2: #bababa;
-$dark-grey: #d0d0d0;
+$dark-grey: #a0a0a0;
 $red: #9a0013;
 $gold: #A96C00;
 
@@ -44,10 +45,6 @@ section#main {
   margin: 5px;
 }
 
-a:hover {
-  color: #A96C00;
-}
-
 h2 {
   color: $red;
   font-family: helvetica;
@@ -58,6 +55,11 @@ a:visited, a {
   color: black;
   text-decoration: none;
 }
+
+a:hover {
+  color: #A96C00;
+}
+
 
 h1 {
   font-size: 20px;
@@ -104,7 +106,7 @@ div#topArticleBox {
 
 section#articleBox {
   height: 170px;
-  width: $websiteW;
+  width: 959px;
   border: solid $grey 1px;
   margin-bottom: 40px;
 
@@ -135,13 +137,24 @@ div.both {
 
 p.copyright {
   margin-top: 50px;
+  padding-bottom: 20px;
   text-align: center;
   color: $dark-grey;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 h3 {
   color: $red;
+}
+
+h5 {
+  color: $red;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+h4 {
+  font-size: 25px;
 }
 
 /******************/
@@ -394,6 +407,57 @@ body > .overlay {
 }
 
 /******************/
+/***** FORM *******/
+/******************/
+
+form {
+  background-color: $grey;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+  input, textarea {
+    border: 1px solid black;
+  }
+
+  .input {
+    padding-top: 20px;
+  }
+
+  .checkbox {
+    margin-top: 10px;
+    float: left;
+  }
+
+  input.checkbox {
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+  input[type=submit] {
+    color: white;
+    background-color: $red;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+
+  .littlemargin {
+    margin-top: 5px;
+  }
+
+  textarea {
+    height: 117px;
+    width: 416px;
+  }
+}
+
+/******************/
 /***** IMAGE ******/
 /******************/
 
@@ -430,4 +494,8 @@ body > .overlay {
   display: inline;
   max-width: 145px;
   max-height: 266px;
+}
+
+.news {
+  float: left;
 }
