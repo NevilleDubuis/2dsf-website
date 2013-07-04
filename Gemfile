@@ -2,6 +2,7 @@
 source 'http://rubygems.org'
 
 gem 'rack'
+gem 'pony'
 
 group :nanoc do
   gem 'nanoc', '3.6.3'

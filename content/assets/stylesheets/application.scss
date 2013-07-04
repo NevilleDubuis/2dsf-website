@@ -417,6 +417,10 @@ body > .overlay {
   background-image: url('itrasBy_landscape.jpg');
 }
 
+.contact_landscape {
+  background-image: url('contact_landscape.jpg');
+}
+
 .newsimg {
   @include box-shadow(black 2px 2px 10px);
 }
