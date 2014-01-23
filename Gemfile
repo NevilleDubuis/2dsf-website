@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 
 gem 'rack'
 gem 'pony'
+gem "sinatra"
 
 group :nanoc do
   gem 'nanoc', '3.6.3'
@@ -17,8 +18,6 @@ group :nanoc do
   gem 'nanoc-sprockets-filter'
   gem 'nanoc-gzip-filter'
   gem 'uglifier'
-
-  gem "sinatra"
 end
 
 group :development do
