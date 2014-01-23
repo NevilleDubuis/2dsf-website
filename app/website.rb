@@ -17,7 +17,7 @@ module Application
         :from     => params[:message_request][:mail],
         :to       => COMMAND_EMAIL_TO,
         :charset  => 'utf-8',
-        :subject  => COMMAND_SUBJECT,
+        :subject  => params[:message_request][:subject],
         :body     => template.result(binding)
       )
       redirect "/"

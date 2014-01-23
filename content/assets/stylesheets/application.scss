@@ -32,7 +32,11 @@ $list-space: 15px;
 /**********************/
 
 body {
-  font-family: arial;
+  font-family: helvetica, arial;
+}
+
+p {
+  font-size: 12px;
 }
 
 section#main {
@@ -46,9 +50,9 @@ section#main {
 }
 
 h2 {
+  font-size: 20px;
   color: $red;
   font-family: helvetica;
-  margin-top: 10px;
 }
 
 a:visited, a {
@@ -62,7 +66,7 @@ a:hover {
 
 
 h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: helvetica;
 }
 
@@ -89,8 +93,8 @@ hr {
   float: right;
 
   img {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
   }
 
   p {
@@ -120,6 +124,10 @@ section#articleBox {
 
     p {
       margin: 20px 5px 10px 0;
+      text-shadow: 4px 4px 4px black;
+      webkit-text-shadow: 4px 4px 4px black;
+      text-shadow: 1px solid black;
+      text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
   }
 }
@@ -145,6 +153,8 @@ p.copyright {
 
 h3 {
   color: $red;
+  font-size: 12px;
+  text-align: center;
 }
 
 h5 {
@@ -331,10 +341,12 @@ body > .overlay {
 
   .NavBarLi {
     float: left;
-    margin-top: -9px;
+    margin-top: -11px;
     border: 1px solid white;
     z-index: 1000;
     padding-top: 9px;
+    padding-left: 27px;
+    padding-right: 28px;
 
     &.active {
       border: 1px solid black;
@@ -346,10 +358,10 @@ body > .overlay {
     position: absolute;
     background-color: white;
     z-index: 2000;
-    left: 87px;
+    left: 69px;
     top: 15px;
     height: 5px;
-    width: 72px;
+    width: 90px;
   }
 
   .NavBarLi2 {
@@ -359,7 +371,7 @@ body > .overlay {
     border-top: none;
     background-color: white;
     position: absolute;
-    left: 86px;
+    left: 68px;
     z-index: 500;
     border: 1px solid black;
     padding-top: 10px;
@@ -393,8 +405,11 @@ body > .overlay {
 
 
 .goodiesImg {
-  float: left;
-  margin-right: 80px;
+  margin: 5px;
+  display: inline;
+  max-width: 145px;
+  max-height: 266px;
+  margin-left: 33.33%;
 }
 
 .book {

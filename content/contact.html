@@ -3,7 +3,7 @@
 <% end %>
 
 <img src="<%= image_path('+_sign.png') %>" class="news"></img>
-<h5>NEWS</h5>
+<h5>News</h5>
 <div class="both"></div>
 <p>Vous voici parvenu dans le site de 2d Sans Faces. L'éditeur des jeux de rôles Nightprowler. Tigres Volants et Nobilis. Vous trouverez ici toutes sortes d'informations concernant nos activités éditoriales et nos produits actuellement commercialisés ou encore en développement.</p>
 <hr />
@@ -19,7 +19,7 @@
     <p>Remplissez le formulaire ad hoc et nous</p>
     <p>nous ferons un plaisir de vous recontacter.</p>
     <br />
-    <h2>ADRESSE</h2>
+    <h2>Addresse</h2>
     <hr class="small" />
     <p>2d sans faces</p>
     <p>Société coopérative</p>
@@ -27,9 +27,10 @@
     <p>CH - 1002 Lausanne</p>
   </div>
   <div class="span6">
-    <h4>CONTACTEZ-NOUS</h4>
+    <h4>Contactez-nous</h4>
     <hr class="small" />
     <form method="POST" action="/index">
+      <div class="input"><p>Sujet</p><input name="message_request[subject]" size="80" type="text" value="" required></input></div>
       <div class="input"><p>Nom</p><input name="message_request[name]" size="80" type="text" value="" required></input></div>
       <div class="input"><p>Prénom</p><input name="message_request[firstname]" size="80" type="text" value="" required></input></div>
       <div class="input"><p>E-mail</p><input name="message_request[mail]" size="80" type="email" pattern="^[_a-z0-9-A-Z]+(\.[_a-z-A-Z0-9-]+)*@[a-z-A-Z0-9-]+(\.[a-z-A-Z0-9-]+)*(\.[a-z]{2,4})$" value="" required></input></div>

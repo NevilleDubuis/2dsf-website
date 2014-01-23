@@ -124,13 +124,13 @@ $(function($, undefined) {
   $('.box > .overflow').css('position', 'relative');
 
   if($('.box > .overflow > .current').next('.box > .overflow > .display').length === 0) {
-    $('.next').css({'opacity': '0.3',
+    $('.next').css({'opacity': '0', //0.3
                     'cursor': 'default'
                   });
   }
 
   if($('.box > .overflow > .current').prev('.box > .overflow > .display').length === 0) {
-    $('.previous').css({'opacity': '0.3',
+    $('.previous').css({'opacity': '0', //0.3
                     'cursor': 'default'
                   });
   }
@@ -158,7 +158,7 @@ $(function($, undefined) {
       $(event.currentTarget).parent().find('.box > .overflow').animate({left: move}, 1500);
 
       if($('.box > .overflow > .current').next('.box > .overflow > .display').length === 0) {
-          $('.next').css({'opacity': '0.3',
+          $('.next').css({'opacity': '0', //0.3
                           'cursor': 'default'
                         });
       } else {
@@ -168,7 +168,7 @@ $(function($, undefined) {
       }
 
       if($('.box > .overflow > .current').prev('.box > .overflow > .display').length === 0) {
-        $('.previous').css({'opacity': '0.3',
+        $('.previous').css({'opacity': '0', //0.3
                             'cursor': 'default'
                           });
       } else {
