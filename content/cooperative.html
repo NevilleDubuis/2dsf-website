@@ -1,0 +1,33 @@
+<% content_for :articleBox do %>
+  <div id="newsBox" class="contact_landscape" /></div>
+<% end %>
+
+<img src="<%= image_path('+_sign.png') %>" class="news"></img>
+<h5>News</h5>
+<div class="both"></div>
+<p>Vous voici parvenu dans le site de 2d Sans Faces. L'éditeur des jeux de rôles Nightprowler. Tigres Volants et Nobilis. Vous trouverez ici toutes sortes d'informations concernant nos activités éditoriales et nos produits actuellement commercialisés ou encore en développement.</p>
+<hr />
+<div class="row">
+  <div class="span6">
+    <h4>Informations</h4>
+    <hr class="small" />
+    <a href="#" class="redlink">status</a>
+    <a href="#" class="redlink">buts</a>
+    <a href="#" class="redlink">projets</a>
+    <a href="#" class="redlink">membres</a>
+    <br />
+    <h2>ADRESSE</h2>
+    <hr class="small" />
+    <p>2d sans faces</p>
+    <p>Société coopérative </p>
+    <p>Case postale 5850</p>
+    <p>CH - 1002 Lausanne</p>
+  </div>
+  <div class="span6" id="item_lightbox">
+    <h4>Coopérative d’édition</h4>
+    <hr class="small" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a elit erat. Ut elementum felis ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a elit erat. Ut elementum felis ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a elit erat. Ut elementum felis ut</p>
+    <%= content_for(item, :description) %>
+    <a href="#" class="lightbox_link"><div class="circle"></div><div class="circle"></div><div class="circle"></div></a>
+  </div>
+</div>
