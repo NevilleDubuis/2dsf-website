@@ -1,7 +1,6 @@
-key: nightprowler
-name: NightProwler
-header_class: nightProwler_landscape
-header_legend: Legend
-book: Night Prowler
-news: Content news
+key: np2_ldb
+name: Nightprowler
+header_class: landscape_np2
+header_legend: ...
+book: Nightprowler, livre de base
 order: 1

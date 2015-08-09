@@ -1,7 +1,6 @@
-key: passages
+key: passages_ldb
 name: Passages
-header_class: passages_landscape
-header_legend: Legend
-book: "Passages, le livre"
-news: Content news
+header_class: landscape_passages
+header_legend: ...
+book: "Passages, le livre de base"
 order: 1

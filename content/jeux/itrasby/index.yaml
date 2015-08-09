@@ -1,7 +1,6 @@
-key: itrasby
+key: itrasby_ldb
 name: Itrasby
-header_class: itrasBy_landscape
-header_legend: Legend
-book: Itrasby book
-news: Content news
+header_class: landscape_itrasby
+header_legend: ...
+book: Itrasby
 order: 1

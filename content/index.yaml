@@ -1,7 +1,6 @@
-key: nightprowler
+key: home
 name: Accueil
-header_class: nightProwler_landscape
-header_legend: accueil
-book: Itrasby book
+header_class: landscape_np2
+header_legend: ...
 news: Content news
 order: 1

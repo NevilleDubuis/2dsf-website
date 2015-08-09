@@ -1,7 +1,6 @@
-key: nobilis
+key: nobilis_ldb
 name: Nobilis
-header_class: nobilis_landscape
-header_legend: Legend
-book: Nobilis book
-news: Content news
+header_class: landscape_nobilis
+header_legend: ...
+book: Nobilis
 order: 1

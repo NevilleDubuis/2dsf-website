@@ -1,6 +1,6 @@
 key: tv3_ldb
 name: "Tigres Volants"
-header_class: tigresVolants_Landscape
+header_class: landscape_tv3
 header_legend: "La Sphère vous attend ou pas... Tigres Volants"
 book: "Tigres Volants 3, Livre de base"
 order: 1

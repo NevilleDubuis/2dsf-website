@@ -1,6 +1,3 @@
-key: ecran
-name: Ecran
-header_legend: Legend
-book: Itrasby book
-news: Content news
+key: np2_ecran
+book: "Nightprowler, écran de jeu"
 order: 2
