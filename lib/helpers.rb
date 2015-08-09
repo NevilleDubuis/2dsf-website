@@ -19,10 +19,12 @@ def products(product_line_item = :all)
   @products ||= {}
   @products[product_line_item] ||= begin
     if product_line_item == :all
-      items.select {|item| item.identifier =~ %r{^#{PRODUCT_LINE_ROOT}} }
+      selected_items = items.select {|item| item.identifier =~ %r{^#{PRODUCT_LINE_ROOT}} }
     else
-      items.select {|item| item.identifier =~ %r{^#{product_line_item.identifier}(?:[^/]+/)?$} }
+      selected_items = items.select {|item| item.identifier =~ %r{^#{product_line_item.identifier}(?:[^/]+/)?$} }
     end
+
+    selected_items.sort {|a, b| a[:order] <=> b[:order] }
   end
 end
 
@@ -36,8 +38,14 @@ rescue
   raise "Can't find product line for item “#{item.identifier}"
 end
 
-def product_siblings(product_item)
-  products(product_line_of_product(product_item))
+def product_siblings(product_item, first = nil)
+  product_items = products(product_line_of_product(product_item))
+
+  if !first.nil?
+    [first] + product_items.select {|item| item != first}
+  else
+    product_items
+  end
 end
 
 def product_image_path(item, options = {})

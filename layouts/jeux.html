@@ -14,8 +14,8 @@
         <h1><%= item[:name] %></h1>
         <hr class="small" />
         <div id="nav_books">
-          <% product_siblings(item).each_with_index do |item, index| %>
-            <img src="<%= product_image_path item %>" class="newsimg books" id="item_<%= index %>"></img>
+          <% product_siblings(item, item).reverse.each_with_index do |item, index| %>
+            <a href="<%= relative_path_to(item) %>"><img src="<%= product_image_path item %>" class="newsimg books" id="item_<%= index %>"></img></a>
           <% end %>
         </div>
       </div>
@@ -37,10 +37,12 @@
             <% if index % 4 == 0 %>
               <div class="display">
             <% end %>
-            <div class="span2">
-              <img src="<%= product_image_path item %>" class="newsimg <%= index %>"></img>
-              <p><%= item[:name]%></p>
-            </div>
+            <a href="<%= relative_path_to(item) %>">
+              <div class="span2">
+                <img src="<%= product_image_path item %>" class="newsimg <%= index %>"></img>
+                <p><%= item[:name]%></p>
+              </div>
+            </a>
             <% if index % 4 == 3 %>
               </div>
              <% end %>
