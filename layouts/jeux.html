@@ -5,17 +5,17 @@
       <img src="<%= image_path('+_sign.png') %>" class="news"></img>
       <h5>NEWS</h5>
       <div class="both"></div>
-      <p><%= item[:news] %></p>
+      <p><%= item_news(item) %></p>
     </div>
     <hr />
     <div class="row">
       <div class="span5">
         <h2>GAMME</h2>
-        <h1><%= item[:name] %></h1>
+        <h1><%= product_line_of_product(item)[:name] %></h1>
         <hr class="small" />
         <div id="nav_books">
-          <% product_siblings(item, item).reverse.each_with_index do |item, index| %>
-            <a href="<%= relative_path_to(item) %>"><img src="<%= product_image_path item %>" class="newsimg books" id="item_<%= index %>"></img></a>
+          <% product_siblings(item, item).each_with_index do |item, index| %>
+            <a href="<%= relative_path_to(item) %>" class=""><img src="<%= product_image_path item %>" class="newsimg books item_<%= index %>"></img></a>
           <% end %>
         </div>
       </div>
@@ -39,8 +39,8 @@
             <% end %>
             <a href="<%= relative_path_to(item) %>">
               <div class="span2">
-                <img src="<%= product_image_path item %>" class="newsimg <%= index %>"></img>
-                <p><%= item[:name]%></p>
+                <img src="<%= product_image_path item %>" class="newsimg item_<%= index %>"></img>
+                <p><%= item[:book]%></p>
               </div>
             </a>
             <% if index % 4 == 3 %>

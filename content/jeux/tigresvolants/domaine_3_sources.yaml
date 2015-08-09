@@ -1,7 +1,3 @@
-key: copatransit
-name: Tigres Volants
-header_class: passages_landscape
-header_legend: Legend
-book: Itrasby book
-news: Content news
-order: 5
+key: tv3_domaine_3_sources
+book: "Le secret du domaine des trois sources"
+order: 6

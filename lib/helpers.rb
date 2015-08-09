@@ -8,7 +8,7 @@ include Nanoc::Helpers::LinkTo
 PRODUCT_LINE_ROOT ||= '/jeux/'
 
 def root_item
-  @root_item ||= items.select {|item| item.identifier == '/' }
+  @root_item ||= items.select {|item| item.identifier == '/' }.first
 end
 
 def product_lines
@@ -52,6 +52,8 @@ def product_image_path(item, options = {})
   product_key = item[:key]
 
   image_item = items.find {|i| i.identifier =~ %r{images/jeux_#{product_key}/$} }
+  raise "Missing image for book: #{product_key}" if image_item.nil?
+
   image_path image_item
 end
 
@@ -64,4 +66,14 @@ end
 
 def is_current_item(target)
   item.identifier == target
+end
+
+def item_news(item)
+  if item.nil?
+    root_item[:news]
+  elsif item[:news].nil?
+    item_news(item.parent)
+  else
+    item[:news]
+  end
 end
