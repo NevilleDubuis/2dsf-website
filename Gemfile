@@ -23,6 +23,7 @@ end
 group :development do
   gem 'capistrano'
   gem 'railsless-deploy'
+  gem 'adsf'
 end
 
 group :development, :test do
