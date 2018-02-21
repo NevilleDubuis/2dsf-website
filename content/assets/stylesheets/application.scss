@@ -455,8 +455,7 @@ body > .overlay {
 
 form {
   background-color: $grey;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   margin-top: 20px;
 
   input, textarea {
@@ -494,9 +493,12 @@ form {
     margin-top: 5px;
   }
 
+  textarea, input[type=text], input[type=email] {
+    width: 100%;
+  }
+
   textarea {
     height: 117px;
-    width: 416px;
   }
 }
 
