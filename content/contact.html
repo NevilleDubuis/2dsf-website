@@ -1,11 +1,12 @@
 <% content_for :articleBox do %>
-  <div id="newsBox" class="contact_landscape" /></div>
+  <div id="newsBox" class="<%= item[:header_class] %>" /></div>
 <% end %>
 
 <img src="<%= image_path('+_sign.png') %>" class="news"></img>
 <h5>News</h5>
 <div class="both"></div>
-<p>Vous voici parvenu dans le site de 2d Sans Faces. L'éditeur des jeux de rôles Itras By, Nightprowler. Tigres Volants et Nobilis. Vous trouverez ici toutes sortes d'informations concernant nos activités éditoriales et nos produits actuellement commercialisés ou encore en développement.</p>
+<p><%= item_news(item) %></p>
+<div class="both"></div>
 <hr />
 <div class="row">
   <div class="span6">

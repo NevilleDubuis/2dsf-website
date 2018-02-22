@@ -1,7 +1,3 @@
-key: nightprowler
-name: Accueil
-header_class: contact_landscape
-header_legend: accueil
-book: Itrasby book
-news: Content news
-order: 1
+header_class: landscape_contact
+header_legend:
+news: Itras By Sort le 23 février en boutique
