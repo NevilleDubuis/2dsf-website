@@ -450,6 +450,22 @@ body > .overlay {
   margin-top: 0;
 }
 
+#content {
+  ul {
+    list-style-type: disc;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  b, strong {
+    font-weight:  bold;
+  }
+}
+
 /******************/
 /***** FORM *******/
 /******************/
