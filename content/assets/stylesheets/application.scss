@@ -56,12 +56,13 @@ h2 {
 }
 
 a:visited, a {
-  color: black;
+  color: #A96C00;
   text-decoration: none;
 }
 
 a:hover {
   color: #A96C00;
+  text-decoration: underline;
 }
 
 a.redlink {
@@ -91,6 +92,10 @@ hr {
   background-color: $grey2;
   color: $grey2;
   border: none;
+}
+
+i {
+  font-style: italic;
 }
 
 .imagehomepage {
@@ -553,6 +558,11 @@ form {
 
 .landscape_itrasby {
   background-image: asset-url("landscape_itrasby.jpg");
+}
+
+.landscape_squeele {
+  background-image: asset-url("landscape_squeele.jpg");
+  background-size: cover;
 }
 
 .landscape_contact {
