@@ -10,7 +10,7 @@ module Application
     set :public_folder, File.expand_path('../../public', __FILE__)
 
     # Contact form
-    post '/index' do
+    post '/contact' do
       template = ERB.new(File.read(File.expand_path('../templates/contact.text.erb', __FILE__), :encoding => 'UTF-8'))
 
       Pony.mail(
@@ -21,6 +21,10 @@ module Application
         :body     => template.result(binding)
       )
       redirect "/"
+    end
+
+    get '/' do
+      redirect '/index.html'
     end
   end
 end
