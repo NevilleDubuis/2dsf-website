@@ -1,9 +1,6 @@
-# encoding: utf-8
-#\ -w
-$: << File.expand_path('..', __FILE__)
+require 'rubygems'
+Gem.clear_paths
 
-require 'rubygems' if RUBY_VERSION < '1.9'
-require 'bundler/setup'
-require 'app/website'
-
+require 'sinatra'
+require './app/website.rb'
 run Application::Website
