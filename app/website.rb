@@ -18,7 +18,8 @@ module Application
         :to       => COMMAND_EMAIL_TO,
         :charset  => 'utf-8',
         :subject  => params[:message_request][:subject],
-        :body     => template.result(binding)
+        :body     => template.result(binding),
+        :via      => :sendmail
       )
       redirect "/"
     end
