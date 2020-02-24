@@ -3,5 +3,5 @@
 #
 # COMMAND
 #
-COMMAND_EMAIL_TO = 'simon.walther@liquid-concept.ch' #CHANGE BEFOR PUSH
-# COMMAND_SUBJECT  = 'contact depuis le formulaire du site'
+COMMAND_EMAIL_TO = 'ndubuis@gmail.com'
+COMMAND_SUBJECT  = 'contact depuis le formulaire du site'
