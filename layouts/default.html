@@ -13,7 +13,6 @@
         <div id="social">
           <p>Contact</p>
           <a href="https://www.facebook.com/2dSansFaces" target="_blank"><img src="<%= image_path('facebook_button.png') %>" class="social"></img></a>
-          <a href="https://plus.google.com/110673719649168401226/about" target="_blank"><img src="<%= image_path('g+.png') %>" class="social"></img></a>
           <p>RSS</p>
           <a href="https://www.facebook.com/2dSansFaces" target="_blank"><img src="/assets/rss.jpg" class="social"></img></a>
         </div>
@@ -24,17 +23,17 @@
               <a class="NavBarLink" href="#">Jeux</a>
               <div id="blank"></div>
               <ul class="NavBarLi2">
-                <li><%= link_to 'Freaks&#39; Squeele', '/jeux/freakssqueele.html' %></li>
-                <li><%= link_to 'Nightprowler', '/jeux/nightprowler/' %></li>
-                <li><%= link_to 'Tigres Volants', '/jeux/tigresvolants/' %></li>
                 <li><%= link_to 'Itras By', '/jeux/itrasby/' %></li>
-                <li><%= link_to 'Nobilis', '/jeux/nobilis/' %></li>
+                <li><%= link_to 'Nightprowler', '/jeux/nightprowler/' %></li>
+                <li><%= link_to 'Freaks&#39; Squeele', '/jeux/freakssqueele.html' %></li>
                 <li><%= link_to 'Les Contes du Soleil Couchant', '/jeux/soleilcouchant.html' %></li>
+                <li><%= link_to 'Tigres Volants', '/jeux/tigresvolants/' %></li>
+                <li><%= link_to 'Nobilis', '/jeux/nobilis/' %></li>
               </ul>
             </li>
             <li><%= link_to 'Boutique', '/../boutique.html' %></li>
             <li><%= link_to 'Cooperative', '/../cooperative.html' %></li>
-            <li><%= link_to 'Téléchargement', '/../goodies.html' %></li>
+            <li><%= link_to 'Téléchargements', '/../goodies.html' %></li>
             <li><%= link_to 'Contact', '/../contact.html' %></li>
           </ul>
         </nav>
@@ -53,7 +52,7 @@
         <%= yield %>
       </section>
       <footer>
-        <p class="copyright">©2006-2018 2d Sans Faces, société coopérative - développé par Liquid Concept</p>
+        <p class="copyright">©2006-2021 2d Sans Faces, société coopérative - développé par Liquid Concept</p>
       </footer>
     </section>
     <section id="details">
